@@ -15,7 +15,6 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Gedmo\Translatable\Entity\MappedSuperclass\AbstractPersonalTranslation
  *
- * @ORM\MappedSuperclass
  */
 #[ORM\MappedSuperclass]
 abstract class AbstractPersonalTranslation
