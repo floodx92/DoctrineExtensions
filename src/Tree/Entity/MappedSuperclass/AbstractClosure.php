@@ -12,9 +12,6 @@ namespace Gedmo\Tree\Entity\MappedSuperclass;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\MappedSuperclass
- */
 #[ORM\MappedSuperclass]
 abstract class AbstractClosure
 {

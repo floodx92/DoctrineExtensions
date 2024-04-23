@@ -17,8 +17,6 @@ use Gedmo\Translator\Translation as BaseTranslation;
  * Entity translation class.
  *
  * @author Konstantin Kudryashov <ever.zet@gmail.com>
- *
- * @ORM\MappedSuperclass
  */
 #[ORM\MappedSuperclass]
 abstract class Translation extends BaseTranslation

@@ -18,8 +18,6 @@ use Gedmo\Loggable\Loggable;
  * @phpstan-template T of Loggable|object
  *
  * @phpstan-implements LogEntryInterface<T>
- *
- * @ORM\MappedSuperclass
  */
 #[ORM\MappedSuperclass]
 abstract class AbstractLogEntry implements LogEntryInterface
