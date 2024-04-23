@@ -21,10 +21,6 @@ abstract class AbstractPersonalTranslation
 {
     /**
      * @var int|null
-     *
-     * @ORM\Column(type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     #[ORM\Column(type: Types::INTEGER)]
     #[ORM\Id]
@@ -33,16 +29,12 @@ abstract class AbstractPersonalTranslation
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", length=8)
      */
     #[ORM\Column(type: Types::STRING, length: 8)]
     protected $locale;
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", length=32)
      */
     #[ORM\Column(type: Types::STRING, length: 32)]
     protected $field;
@@ -57,8 +49,6 @@ abstract class AbstractPersonalTranslation
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="text", nullable=true)
      */
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     protected $content;

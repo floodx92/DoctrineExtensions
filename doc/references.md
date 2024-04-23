@@ -132,19 +132,12 @@ use References\Fixture\ODM\MongoDB\Product;
 #[ORM\Entity]
 class StockItem
 {
-    /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
     #[ORM\Id]
     #[ORM\Column(type: Types::INTEGER)]
     #[ORM\GeneratedValue(strategy: 'IDENTITY')]
     private $id;
 
-    /**
-     * @ORM\Column
-     */
+
     #[ORM\Column]
     private $name;
 

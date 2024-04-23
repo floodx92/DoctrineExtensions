@@ -18,13 +18,6 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\MappedSuperclass]
 abstract class AbstractClosure
 {
-    /**
-     * @var int|null
-     *
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     * @ORM\Column(type="integer")
-     */
     #[ORM\Column(type: Types::INTEGER)]
     #[ORM\Id]
     #[ORM\GeneratedValue(strategy: 'IDENTITY')]
@@ -49,7 +42,6 @@ abstract class AbstractClosure
     /**
      * @var int|null
      *
-     * @ORM\Column(type="integer")
      */
     #[ORM\Column(type: Types::INTEGER)]
     protected $depth;

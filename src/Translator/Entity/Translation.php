@@ -25,10 +25,6 @@ abstract class Translation extends BaseTranslation
 {
     /**
      * @var int
-     *
-     * @ORM\Column(type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue
      */
     #[ORM\Column(type: Types::INTEGER)]
     #[ORM\Id]
@@ -37,24 +33,18 @@ abstract class Translation extends BaseTranslation
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", length=8)
      */
     #[ORM\Column(type: Types::STRING, length: 8)]
     protected $locale;
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="string", length=32)
      */
     #[ORM\Column(type: Types::STRING, length: 32)]
     protected $property;
 
     /**
      * @var string
-     *
-     * @ORM\Column(type="text", nullable=true)
      */
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     protected $value;
