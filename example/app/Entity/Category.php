@@ -19,10 +19,6 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @Gedmo\Tree(type="nested")
- *
- * @ORM\Table(name="ext_categories")
- * @ORM\Entity(repositoryClass="App\Entity\Repository\CategoryRepository")
- *
  * @Gedmo\TranslationEntity(class="App\Entity\CategoryTranslation")
  */
 #[Gedmo\Tree(type: 'nested')]

@@ -75,7 +75,6 @@ use Gedmo\Tree\Entity\Repository\NestedTreeRepository;
 
 /**
  * @Gedmo\Tree(type="nested")
- * @ORM\Table(name="categories")
  * @ORM\Entity(repositoryClass="Gedmo\Tree\Entity\Repository\NestedTreeRepository")
  */
 #[Gedmo\Tree(type: 'nested')]
